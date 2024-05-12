@@ -5,9 +5,11 @@ import csv
 class ContactBookApp:
     def __init__(self, master):
         self.master = master
-        self.master.title("Contact Book")
-        self.master.geometry("720x400")  # Set window size to 1080x720
+        self.master.title("Emmanuel Phone Book")
+        self.master.geometry("720x400")  # Set window size to 720x400
         self.master.configure(bg="#f0f0f0")  # Set background color
+        # Set the icon for the application window
+        self.master.iconbitmap("./myicon.ico")  # Replace "path/to/icon.ico" with the path to your icon file
         
         self.contacts = []
         self.load_contacts_from_file()  # Load contacts from CSV file
@@ -36,13 +38,16 @@ class ContactBookApp:
         self.address_entry = tk.Entry(input_frame, font=("Segoe UI", 12))
         self.address_entry.grid(row=3, column=1, padx=10, pady=5)
             
-    # Buttons
+        # Buttons
         # Add Contact button
         button_style = {"font": ("Segoe UI", 12), "width": 15}
         
         add_contact_button = tk.Button(self.master, text="Add Contact", command=self.add_contact, bg="#4CAF50", fg="white", **button_style)
         add_contact_button.pack(pady=10)
-        # Center the Add Contact button
+
+
+
+        # Center the Add Contact button - this is not needed again
         # add_contact_button.place(anchor=tk.CENTER)
 
         view_update_frame = tk.Frame(self.master, bg="#f0f0f0")
