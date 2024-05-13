@@ -15,8 +15,7 @@ To run the Password Generator program, follow these steps:
 
 1. Ensure you have Python installed on your system.
 2. Clone this repository to your local machine using `git clone`.
-3. Navigate to the directory containing the `password_generator.py` file.
-4. Run the `password_generator.py` script using Python.
+3. Run the `main.py` script using Python.
 
 ## Technologies Used
 

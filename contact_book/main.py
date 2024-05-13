@@ -9,7 +9,7 @@ class ContactBookApp:
         self.master.geometry("720x400")  # Set window size to 720x400
         self.master.configure(bg="#f0f0f0")  # Set background color
         # Set the icon for the application window
-        self.master.iconbitmap("./myicon.ico")  # Replace "path/to/icon.ico" with the path to your icon file
+        self.master.iconbitmap("./myicon.ico")  
         
         self.contacts = []
         self.load_contacts_from_file()  # Load contacts from CSV file
